@@ -1,3 +1,3 @@
 # 2023STB_Jeong-muhyeon
 
-this is my first job yes!
+this is my first job
