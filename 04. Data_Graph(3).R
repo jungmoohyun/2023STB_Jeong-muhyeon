@@ -39,3 +39,4 @@ boxplot(X2023_STB_survey$`Grade`, X2023_STB_survey$`Age`, main="Grade별Age비�
 #11Step.(데이터분석) X2023_STB_survey의Grade를X값으로Age를Y값으로하는산점도를만들어보세요.
 
 plot(x=X2023_STB_survey$'Grade', y=X2023_STB_survey$'Age', xlab="학년", ylab="나이")
+ 
