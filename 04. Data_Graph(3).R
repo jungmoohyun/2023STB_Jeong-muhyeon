@@ -19,7 +19,7 @@ barplot(table(X2023_STB_survey$`residential area`), horiz=TRUE)
 
 #7Step.(데이터분석) X2023_STB_survey의Gender와Grade2개의인자를가지고막대그래프를작성하세요.
 
-table(X2023_STB_survey$Gender, X2023_STB_survey$Grade)
+entry <- table(X2023_STB_survey$Gender, X2023_STB_survey$Grade)
 barplot(entry)
 
 #8Step.(데이터분석) X2023_STB_survey의Grade1개의인자를가지고파이차트를작성하세요.
@@ -35,7 +35,12 @@ hist(X2023_STB_survey$Age,main='age')
 summary(X2023_STB_survey)
 boxplot(X2023_STB_survey)
 
-boxplot(X2023_STB_survey$`Grade`, X2023_STB_survey$`Age`, main="Grade별Age비교", col="yellow", names = c("Grade","Age"))
+age<-X2023_STB_survey$`Age`
+grade<-X2023_STB_survey$Grade
+
+boxplot(age~grade,date=X2023_STB_survey, main='학년별나이비교', xlab="학년", ylab="나이")
+
+
 #11Step.(데이터분석) X2023_STB_survey의Grade를X값으로Age를Y값으로하는산점도를만들어보세요.
 
 plot(x=X2023_STB_survey$'Grade', y=X2023_STB_survey$'Age', xlab="학년", ylab="나이")
