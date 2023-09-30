@@ -32,8 +32,8 @@ hist(X2023_STB_survey$Age,main='age')
 #10Step.(데이터분석) X2023_STB_survey의Grade별Age를비교하는박스플롯을만들어보세요. 그리고Grade별Age에대한기술통계분석을실시하여각박스플롯을비교설명하세요.
 
 #기술통계분석 
-summary(X2023_STB_survey)
-boxplot(X2023_STB_survey)
+summary(X2023_STB_survey$Age)
+boxplot(X2023_STB_survey$Age)
 
 age<-X2023_STB_survey$`Age`
 grade<-X2023_STB_survey$Grade
@@ -43,4 +43,4 @@ boxplot(age~grade,date=X2023_STB_survey, main='학년별나이비교', xlab="학
 
 #11Step.(데이터분석) X2023_STB_survey의Grade를X값으로Age를Y값으로하는산점도를만들어보세요.
 
-plot(x=X2023_STB_survey$'Grade', y=X2023_STB_survey$'Age', xlab="학년", ylab="나이")
+plot(x=X2023_STB_survey$'Grade', y=X2023_STB_survey$'Age', xlab="학년", ylab="나이") 
